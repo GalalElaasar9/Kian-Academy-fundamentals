@@ -19,6 +19,11 @@ import subImage1 from "@/assets/Project_1/image_1.jpeg";
 import subImage2 from "@/assets/Project_1/image_2.jpeg";
 import subImage3 from "@/assets/Project_1/image_3.jpeg";
 import subImage4 from "@/assets/Project_1/image_4.jpeg";
+import subImage5 from "@/assets/Project_1/image_5.jpeg";
+import subImage6 from "@/assets/Project_1/image_6.jpeg";
+import subImage7 from "@/assets/Project_1/image_7.jpeg";
+import subImage8 from "@/assets/Project_1/image_8.jpeg";
+import subImage9 from "@/assets/Project_1/image_9.jpeg";
 
 
 // Project 2
@@ -105,9 +110,9 @@ const projects = [
       { id: 2, subImage: subImage2 },
       { id: 3, subImage: subImage3 },
       { id: 4, subImage: subImage4 },
-      // {id:5 , subImage:subImage5},
-      // {id:6 , subImage:subImage6},
-      // {id:7 , subImage:subImage7}
+      { id:5 , subImage:subImage5 },
+      { id:6 , subImage:subImage6 },
+      { id:7 , subImage:subImage7 },
     ],
   },
   { id: 2, img: mainImageProject_2, subImages: [{ id: 1, subImage: subImageProject_2 }] },
@@ -314,7 +319,7 @@ export default function Index() {
             title="Projects Built By Our Students"
             subtitle="Real projects students build during the course "
           />
-          <div className="grid md:grid-cols-3 gap-6 mb-14">
+          <div className="grid md:grid-cols-2 gap-6 mb-14">
             {projects.map((project, i) => (
               <motion.div
                 key={project.id}
