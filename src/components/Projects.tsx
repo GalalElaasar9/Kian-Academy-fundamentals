@@ -60,7 +60,7 @@ export default function Projects({ project }: Props) {
       <div
         className="
           absolute bottom-2 left-[50%] translate-x-[-50%]
-          flex items-center
+          flex items-center flex-row-reverse
           overflow-x-auto scrollbar-hide
           
           bg-background/40
@@ -87,9 +87,9 @@ export default function Projects({ project }: Props) {
             className={`              
               shrink-0
               w-11 h-11
-              sm:w-16 sm:h-16
-              md:w-18 md:h-18
-              lg:w-20 lg:h-20
+              md:w-12 md:h-12
+              lg:w-16 lg:h-16
+              xl:w-19 xl:h-19
 
               rounded-xl
               overflow-hidden

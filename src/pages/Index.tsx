@@ -3,15 +3,15 @@ import { motion } from "framer-motion";
 import { SubscribeButton } from "@/components/SubscribeButton";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { CountdownTimer } from "@/components/CountdownTimer";
-import opinion from "@/assets/Marzouk Ismail x-2143.jpg";
-import opinion1 from "@/assets/opinion1.jpeg";
-import opinion2 from "@/assets/opinion2.jpeg";
-import opinion3 from "@/assets/opinion3.jpeg";
-import opinion4 from "@/assets/opinion4.jpeg";
-import opinion5 from "@/assets/opinion5.jpeg";
-import opinion6 from "@/assets/opinion6.jpeg";
-import opinion7 from "@/assets/opinion7.jpeg";
-import opinion8 from "@/assets/opinion8.jpeg";
+import opinion from "@/assets/Testimonials/opinion.jpeg";
+import opinion2 from "@/assets/Testimonials/opinion2.jpeg";
+import opinion3 from "@/assets/Testimonials/opinion3.jpeg";
+import opinion4 from "@/assets/Testimonials/opinion4.jpeg";
+import opinion5 from "@/assets/Testimonials/opinion5.jpeg";
+import opinion6 from "@/assets/Testimonials/opinion6.jpeg";
+import opinion7 from "@/assets/Testimonials/opinion7.jpeg";
+import opinion8 from "@/assets/Testimonials/opinion8.jpeg";
+import opinion9 from "@/assets/Testimonials/opinion9.jpeg";
 import Projects from "@/components/Projects";
 
 // Project 1
@@ -29,11 +29,27 @@ import subImage9 from "@/assets/Project_1/image_9.jpeg";
 
 // Project 2
 import mainImageProject_2 from "@/assets/Project_2/main-image-project_2.jpeg";
-import subImageProject_2 from "@/assets/Project_2/image_1.jpeg";
+import subImageProject_2_1 from "@/assets/Project_2/image_1.jpeg";
+import subImageProject_2_2 from "@/assets/Project_2/image_2.jpeg";
+import subImageProject_2_3 from "@/assets/Project_2/image_3.jpeg";
+import subImageProject_2_4 from "@/assets/Project_2/image_4.jpeg";
+import subImageProject_2_5 from "@/assets/Project_2/image_5.jpeg";
+import subImageProject_2_6 from "@/assets/Project_2/image_6.jpeg";
+import subImageProject_2_7 from "@/assets/Project_2/image_7.jpeg";
+// import subImageProject_2_8 from "@/assets/Project_2/image_1.jpeg";
+// import subImageProject_2 from "@/assets/Project_2/image_1.jpeg";
+// import subImageProject_2 from "@/assets/Project_2/image_1.jpeg";
 
 // Project 3
 import mainImageProject_3 from "@/assets/Project_3/main-image-project_3.jpeg";
-import subImageProject_3 from "@/assets/Project_3/image_1.jpeg";
+import subImageProject_3_1 from "@/assets/Project_3/image_1.jpeg";
+import subImageProject_3_2 from "@/assets/Project_3/image_2.jpeg";
+import subImageProject_3_3 from "@/assets/Project_3/image_3.jpeg";
+import subImageProject_3_4 from "@/assets/Project_3/image_4.jpeg";
+import subImageProject_3_5 from "@/assets/Project_3/image_5.jpeg";
+import subImageProject_3_6 from "@/assets/Project_3/image_6.jpeg";
+import subImageProject_3_7 from "@/assets/Project_3/image_7.jpeg";
+
 import Accordion from "@/components/Accordion";
 
 const courseTopics = [
@@ -85,9 +101,60 @@ const courseTopics = [
 ];
 
 const testimonials = [
-  { name: "أحمد محمد", role: "Frontend Developer", text: "أفضل كورس اشتركت فيه! المحتوى منظم والشرح ممتاز جداً.",image:opinion },
-  { name: "سارة علي", role: "Full Stack Developer", text: "بعد الكورس قدرت أشتغل في شركة كبيرة. شكراً لكم!",image:opinion  },
-  { name: "محمود حسن", role: "Freelancer", text: "المشاريع العملية كانت رهيبة وساعدتني أبني portfolio قوي.",image:opinion  },
+  {
+    id:1,
+    name: "مريم على",
+    text:"و الله البشمهندس كريم من افضل الناس اللي بتشرح بطريقه سلسه و سهله اوي أنه يفهم اي حد مبتدأ و أسلوبه كويس جدا ف الشرح  و حقيقي هو من الناس اللي عندها ضمير اوي يعني و أنه بيفهمنا اي حاجه حتي لو مش  تبع شغله معانا أو مش ضمن محتوانا و كان كل همه أننا نكون فاهمين حقيقي ربنا يكرم اصله و يوفقه و يزيده علم و معرفه كمان و كمان يارب العالمين و الاكاديميه زي الفل و الله تقريبا هي المكان الوحيد اللي بحبه ف الزقازيق اصلا 😂 ♥️و ربنا يوفقكم و تكونوا ف تقدم دايما إن شاء الله و تكونوا عون لكل طالب تايه مش عارف يبدأ ازاي و توقفونا ع الطريق الصح جزاكم الله عنا  كل الخير يارب العالمين 🤍🤍",
+    image: opinion,
+  },
+  {
+    id:2,
+    name: "محمد عطية",
+    text: "لا مشاء الله 📌 م/كريم شرحه فوق الممتاز وبيوصل المعلومه بطريقه سهله وبسيطه♥️ وكمان مش بيحفظ المعلومه🤔 لا هو بيشرحها ويفهمها للطلاب لان مش عوزهم يحفظو 🥷🏻كود لا هو عايز يفهمو يعنى ايه كود وبيشرح المعلومه مره واتنين وتلاته..... الخ دا علشان التكرار بيعلم الشطار 🤌 بس ساعه لما يعمل مثلا امتحان على كل محاضره والتانيه واساله وكدا لازم تكون مذاكر ومستوعب الكلام الى قدامك علشان بتنفذه برضو كود ع اللاب توب 😒 وكمان م/كريم صاحب واخ مع الكل👌🏽 وبيحنا لله فى لله علشان بيحب الطلبه بتوعه وبيهتم بيهم ومش بيسبهم حتى بعد الكورس 💪🏼ولو على الاكاديميه هى مجهزه من كله ونظام🌷 واحترام مواعيد⏰ ونضافه ومجهزه من كله صراحه 😎",
+    image: opinion3,
+  },
+  {
+    id:3,
+    name: "عبدالسلام محمد عبدالسلام",
+    text: "في مكان اسمه كيان بدأت الحكاية خطوة جديدة وحلم جوايا علم وخبرة في كل ثانية وطريق واضح للي جاي قدّاميا كورس داتا… مش بس كلام ده فهم وعلم ونظام تمام من أول خطوة لحد النهاية وأنا ماشي بثقة في كل بداية والفضل يرجع لمدرب مميز المهندس أحمد مادح، علمه محفّز بأسلوب سهل وقلب صبور يوصل المعلومة بكل سرور والأوبريشن دايمًا في تنظيم متابعة ودعم بشكل عظيم كل حاجة ماشية بحساب وده اللي يخلّي المكان ليه طابع خاص في كيان اتعلمت أكون أفهم وأحلل وأشوف الكون ولو حد بيسأل أروح فين هقول كيان… من غير نقاش",
+    image: opinion4,
+  },
+  {
+    id:4,
+    name: "سارة شحاتة عبدالعظيم",
+    text: "الكورس جميل جداً كل حاجة مدروسة وتحفة واكيد ارشح أنه ياخد الكورس في كيان",
+    image: opinion2,
+  },
+  {
+    id:5,
+    name: "عمر اشرف محمد محمد",
+    text: "الكورس كويس وبشمهندس احمد شرحه حلو وكيان رقم واحد ف الزقازيق",
+    image: opinion5,
+  },
+  {
+    id:6,
+    name: "محمد صلاح",
+    text: "ممتاز خصوصا مع بشمهندس احمد مادح وشكرا جدا لمتابعتكم معانا طول فترة الكورس",
+    image: opinion6,
+  },
+  {
+    id:7,
+    name: "بسنت سامي حمدي محمد",
+    text: "الكورس جميل جدا واستفادة كتير بصراحه وانتو من احسن الناس الي تعملت معاها  والمكان جميل  بصراحه",
+    image: opinion7,
+  },
+  {
+    id:8,
+    name: "نورهان محمد سعد",
+    text: "الكورس كويس جداً وكل حاجه مدروسه وتحفه واكيد ارشح انو ياخدوا الكورس ف كيان 😍",
+    image: opinion8,
+  },
+  {
+    id:9,
+    name: "ابراهيم محمد ابراهيم",
+    text: "بصراحه كل حاجه تمام والبشمهندس احمد مادح شرحو حلو والمعامله حلوه  والمكان كويس",
+    image: opinion9,
+  },
 ];
 
 const stats = [
@@ -111,8 +178,28 @@ const projects = [
       { id:7 , subImage:subImage7 },
     ],
   },
-  { id: 2, img: mainImageProject_2, subImages: [{ id: 1, subImage: subImageProject_2 }] },
-  { id: 3, img: mainImageProject_3, subImages: [{ id: 1, subImage: subImageProject_3 }] },
+  { id: 2, img: mainImageProject_2, 
+    subImages: [
+      { id: 1, subImage: subImageProject_2_1 },
+      { id: 2, subImage: subImageProject_2_2 },
+      { id: 3, subImage: subImageProject_2_3 },
+      { id: 4, subImage: subImageProject_2_4 },
+      { id: 5, subImage: subImageProject_2_5 },
+      { id: 6, subImage: subImageProject_2_6 },
+      { id: 7, subImage: subImageProject_2_7 }
+    ] 
+  },
+  { id: 3, img: mainImageProject_3, 
+    subImages: [
+      { id: 1, subImage: subImageProject_3_1 },
+      { id: 2, subImage: subImageProject_3_2 },
+      { id: 3, subImage: subImageProject_3_3 },
+      { id: 4, subImage: subImageProject_3_4 },
+      { id: 5, subImage: subImageProject_3_5 },
+      { id: 6, subImage: subImageProject_3_6 },
+      { id: 7, subImage: subImageProject_3_7 }
+    ]
+  },
 ];
 
 function SectionHeader({
@@ -361,7 +448,6 @@ export default function Index() {
                   </div>
                   <div>
                     <div className="font-bold text-foreground text-sm">{t.name}</div>
-                    <div className="text-xs text-muted-foreground">{t.role}</div>
                   </div>
                 </div>
               </motion.div>
