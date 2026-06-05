@@ -51,6 +51,25 @@ import subImageProject_3_7 from "@/assets/Project_3/image_7.jpeg";
 import Accordion from "@/components/Accordion";
 import { Boxes, Brain, Bug, FolderCode, Puzzle, Workflow } from "lucide-react";
 
+
+const whyLearn = [
+  {
+    title: "Learn Problem Solving",
+    desc: "اتعلم إزاي تفكر كمبرمج وتحلل أي مشكلة بخطوات واضحة ومنظمة",
+  },
+  {
+    title: "Build Strong Basics",
+    desc: "أساس قوى يخليك تدخل بعدة أى مجال زى الويب أو الموبايل أو الذكاء الإصطناعى أو الأمن السيبرانى أو أى مجال تانى من مجالات البرمجة",
+  },
+  {
+    title: "Start Your Tech Career",
+    desc: " البرمجة بقت من أهم المهارات المطلوبة في كل المجالات والشركات",
+  },
+  {
+    title: "Practical Learning",
+    desc: " هتتعلم من خلال تطبيقات وتمارين عملية مش مجرد شرح نظري",
+  },
+]
 const courseTopics = [
   {
     icon: <img width={'30px'} height={'30px'} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />,
@@ -322,24 +341,7 @@ export default function Index() {
         <div className="max-w-6xl mx-auto">
           <SectionHeader title="? Why Start With Programming Fundamentals" subtitle="" />
           <div className="grid md:grid-cols-2 gap-6 mb-14" dir="ltr">
-            {[
-              {
-                title: "Learn Problem Solving",
-                desc: "اتعلم إزاي تفكر كمبرمج وتحلل أي مشكلة بخطوات واضحة ومنظمة",
-              },
-              {
-                title: "Build Strong Basics",
-                desc: "أساس قوى يخليك تدخل بعدة أى مجال زى الويب أو الموبايل أو الذكاء الإصطناعى أو الأمن السيبرانى أو أى مجال تانى من مجالات البرمجة",
-              },
-              {
-                title: "Start Your Tech Career",
-                desc: " البرمجة بقت من أهم المهارات المطلوبة في كل المجالات والشركات",
-              },
-              {
-                title: "Practical Learning",
-                desc: " هتتعلم من خلال تطبيقات وتمارين عملية مش مجرد شرح نظري",
-              },
-            ].map((item, i) => (
+            {whyLearn.map((item, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 20 }}
@@ -389,37 +391,8 @@ export default function Index() {
           </div>
         </div>
       </Section>
-
-      {/* PROJECTS */}
-      <Section className="bg-card/20">
-        <div className="max-w-6xl mx-auto">
-          <SectionHeader
-            tag="Student Projects"
-            title="Projects Built By Our Students"
-            subtitle="Real projects students build during the course "
-          />
-          <div className="grid md:grid-cols-2 gap-6 mb-14">
-            {projects.map((project, i) => (
-              <motion.div
-                key={project.id}
-                initial={{ opacity: 0, scale: 0.95 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.1 }}
-                whileHover={{ y: -8 }}
-                className="group relative overflow-hidden rounded-2xl border border-border shadow-elegant bg-card"
-              >
-                <Projects project={project} />
-              </motion.div>
-            ))}
-          </div>
-          <div className="text-center">
-            <SubscribeButton />
-          </div>
-        </div>
-      </Section>
-
-      {/* TESTIMONIALS */}
+        
+              {/* TESTIMONIALS */}
       <Section>
         <div className="max-w-6xl mx-auto">
           <SectionHeader
@@ -446,6 +419,35 @@ export default function Index() {
                     <div className="font-bold text-foreground text-sm">{t.name}</div>
                   </div>
                 </div>
+              </motion.div>
+            ))}
+          </div>
+          <div className="text-center">
+            <SubscribeButton />
+          </div>
+        </div>
+      </Section>
+      
+      {/* PROJECTS */}
+      <Section className="bg-card/20">
+        <div className="max-w-6xl mx-auto">
+          <SectionHeader
+            tag="Student Projects"
+            title="Projects Built By Our Students"
+            subtitle="Real projects students build during the course "
+          />
+          <div className="grid md:grid-cols-2 gap-6 mb-14">
+            {projects.map((project, i) => (
+              <motion.div
+                key={project.id}
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                whileHover={{ y: -8 }}
+                className="group relative overflow-hidden rounded-2xl border border-border shadow-elegant bg-card"
+              >
+                <Projects project={project} />
               </motion.div>
             ))}
           </div>
@@ -514,7 +516,7 @@ export default function Index() {
         </div>
       </Section>
       {/* Q & A */}
-      <section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden bg-gradient-hero">
+      <Section className="relative min-h-screen flex items-center justify-center px-4 overflow-hidden bg-gradient-hero">
         <div className="absolute inset-0 bg-gradient-mesh" />
         <div className="absolute inset-0 grid-pattern opacity-40" />
         <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-primary/20 blur-[120px]" />
@@ -542,7 +544,8 @@ export default function Index() {
             </div>
           </motion.div>
         </div>
-      </section>
+      </Section>
+      
       <Section className="bg-card/20">
         <div className="max-w-3xl mx-auto text-center">
           <motion.div
@@ -583,7 +586,6 @@ export default function Index() {
       {/* PRICING */}
       <Section id="pricing">
         <div className="max-w-3xl mx-auto">
-          {/* <SectionHeader tag="عرض محدود" title="العرض ينتهي خلال" /> */}
           <div className="mb-14">
             <CountdownTimer />
           </div>
