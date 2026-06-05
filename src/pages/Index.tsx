@@ -49,50 +49,51 @@ import subImageProject_3_6 from "@/assets/Project_3/image_6.jpeg";
 import subImageProject_3_7 from "@/assets/Project_3/image_7.jpeg";
 
 import Accordion from "@/components/Accordion";
+import { Boxes, Brain, Bug, FolderCode, Puzzle, Workflow } from "lucide-react";
 
 const courseTopics = [
   {
-    num: "01",
+    icon: <img width={'30px'} height={'30px'} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cplusplus/cplusplus-original.svg" />,
     title: "C++",
     desc: "Learn the fundamentals of C++ programming, syntax, variables, functions, and problem-solving techniques.",
   },
   {
-    num: "02",
+    icon: <Brain size={30}/>,
     title: "Problem Solving",
     desc: "Develop logical thinking skills and solve programming challenges using efficient approaches and algorithms.",
   },
   {
-    num: "03",
+    icon: <Boxes size={30}/>,
     title: "OOP",
     desc: "Understand Object-Oriented Programming concepts like classes, objects, inheritance, and polymorphism.",
   },
   {
-    num: "04",
+    icon:  <Puzzle size={30}/>,
     title: "Data Structures",
     desc: "Learn how to organize and manage data efficiently using arrays, linked lists, stacks, queues, and trees.",
   },
   {
-    num: "05",
+    icon:  <Puzzle size={30}/>,
     title: "Algorithms",
     desc: "Study searching, sorting, recursion, and optimization techniques to write efficient and scalable code.",
   },
   {
-    num: "06",
+    icon: <img width={"30px"} height={"30px"} src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg" />,
     title: "Database",
     desc: "Understand database fundamentals, SQL queries, relationships, and how to manage structured data effectively.",
   },
   {
-    num: "07",
+    icon: <Workflow size={30}/>,
     title: "Design Patterns",
     desc: "Learn reusable software design solutions that help build clean, maintainable, and scalable applications.",
   },
   {
-    num: "08",
+    icon: <Bug size={30}/>,
     title: "Debugging Techniques",
     desc: "Master debugging strategies and tools to identify, analyze, and fix errors efficiently in your code.",
   },
   {
-    num: "09",
+    icon: <FolderCode size={30}/>,
     title: "Build Mini Projects",
     desc: "Apply your knowledge by building real-world mini projects to strengthen your practical programming skills.",
   },
@@ -378,7 +379,7 @@ export default function Index() {
                 className="group bg-gradient-card backdrop-blur-sm border border-border rounded-2xl p-7 hover:border-primary/40 transition-all shadow-soft"
               >
                 <div className="text-sm font-mono text-primary-glow mb-4 tracking-wider">
-                  {t.num}
+                  {t.icon}
                 </div>
                 <h3 className="text-xl font-bold mb-3 text-foreground group-hover:text-primary-glow transition-colors">
                   {t.title}
