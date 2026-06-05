@@ -279,9 +279,6 @@ export default function Index() {
               style={{ lineHeight: "1.5" }}
             >
               <span className="text-foreground">Learn Programming From Zero To Hero</span>{" "}
-              {/* <span className="text-gradient">Data Analysis</span> */}
-              {/* <br /> */}
-              {/* <span className="text-foreground">من الصفر</span> */}
             </h1>
             <p className="text-lg md:text-2xl text-muted-foreground mb-10 max-w-2xl mx-auto leading-relaxed">
               ابدأ رحلتك في عالم البرمجة من الصفر، وافهم أساسيات البرمجة بطريقة عملية وسهلة تؤهلك
@@ -328,20 +325,19 @@ export default function Index() {
             {[
               {
                 title: "Learn Problem Solving",
-                desc: " . اتعلم إزاي تفكر كمبرمج وتحلل أي مشكلة بخطوات واضحة ومنظمة",
+                desc: "اتعلم إزاي تفكر كمبرمج وتحلل أي مشكلة بخطوات واضحة ومنظمة",
               },
               {
                 title: "Build Strong Basics",
-                // desc: " أو أى مجال تانى من مجالات البرمجة Web , Mobile , AI , Cyber Security أساس قوى يخليك تدخل بعدة أى مجال زى ",
                 desc: "أساس قوى يخليك تدخل بعدة أى مجال زى الويب أو الموبايل أو الذكاء الإصطناعى أو الأمن السيبرانى أو أى مجال تانى من مجالات البرمجة",
               },
               {
                 title: "Start Your Tech Career",
-                desc: " . البرمجة بقت من أهم المهارات المطلوبة في كل المجالات والشركات",
+                desc: " البرمجة بقت من أهم المهارات المطلوبة في كل المجالات والشركات",
               },
               {
                 title: "Practical Learning",
-                desc: " . هتتعلم من خلال تطبيقات وتمارين عملية مش مجرد شرح نظري",
+                desc: " هتتعلم من خلال تطبيقات وتمارين عملية مش مجرد شرح نظري",
               },
             ].map((item, i) => (
               <motion.div
@@ -353,7 +349,7 @@ export default function Index() {
                 className="bg-gradient-card backdrop-blur-sm border border-border rounded-2xl p-7 shadow-soft hover:border-primary/40 transition-all"
               >
                 <h3 className="text-xl font-bold mb-2 text-foreground">{item.title}</h3>
-                <p className="text-muted-foreground text-sm leading-relaxed">{item.desc}</p>
+                <p className="text-muted-foreground text-sm text-left leading-relaxed" dir="rtl">{item.desc}</p>
               </motion.div>
             ))}
           </div>

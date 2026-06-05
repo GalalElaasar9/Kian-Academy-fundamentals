@@ -23,7 +23,6 @@ type Props = {
 export default function Projects({ project }: Props) {
   const images = [ project.img, ...(project.subImages?.map((img) => img.subImage) || []),];
 
- 
   return (
     <div className="aspect-4/3 overflow-hidden">
       <Swiper
